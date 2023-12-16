@@ -1,0 +1,230 @@
+.grad-blue {
+  --background: linear-gradient(to right, #007bff, #2196F3);
+  color: white; /* Couleur du texte */
+}
+
+.left-name{
+float: left;
+margin-right: 10px;
+}
+
+ion-slides {
+  height: 100%;
+}
+
+.paragraph-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur de 100% de la vue, pour centrer verticalement */
+  background-color: #000; /* Fond sombre */
+}
+
+.paragraph {
+  color: #ccc; /* Couleur du texte gris clair */
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
+}
+
+/* CSS */
+.custom-button {
+  background-color: linear-gradient(to right, #003366, #336699);
+  color: white; /* Couleur du texte en blanc */
+}
+
+ion-avatar {
+  width: 100px; /* Définissez la largeur souhaitée */
+  height: 100px; /* Définissez la hauteur souhaitée */
+}
+/* Ajoutez ceci pour définir l'image comme arrière-plan de l'en-tête */
+// ion-header {
+//   background-image: url('../assets/dd.png');
+//   background-size: cover; /* Ajustez ceci en fonction de la taille de votre image */
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
+#h-img {
+width: 5%;
+height: 5%;
+border-radius: 10px; /* Vous pouvez ajuster la valeur du rayon pour définir le niveau d'arrondi */
+}
+
+// create-annonce.page.scss
+
+ion-button.small {
+font-size: 12px;
+padding: 4px 8px;
+--background: transparent; // Définir la couleur de fond
+--border-style: none; // Supprimer la bordure
+--box-shadow: none; // Supprimer l'ombre
+}
+
+/* Ajoutez un style différent pour la catégorie sélectionnée */
+ion-button.selected {
+background-color: #007bff; /* Couleur de fond pour la surbrillance */
+color: #fff; /* Couleur du texte pour la surbrillance */
+}
+
+
+/* Ajoutez ces styles dans votre fichier home-page.page.scss */
+.slickCarousel {
+width: 100%; /* Ajustez cela selon vos besoins */
+}
+
+.slick-prev, .slick-next {
+font-size: 24px; /* Ajustez cela selon vos besoins */
+}
+
+
+.swiper-container {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background-color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+color: #fff;
+}
+
+
+ion-slide {
+height: 100vh;
+flex-direction: column;
+}
+
+ion-img {
+max-width: 50vw;
+max-height: 50vh;
+overflow: hidden;
+}
+
+
+.step-one {
+background: var(--ion-color-primary);
+color: var(--ion-color-primary-contrast);
+}
+
+.category-carousel,
+.announcement-carousel {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+white-space: nowrap;
+cursor: grab; /* Ajoutez cette propriété pour activer le défilement avec la souris */
+}
+
+.category-carousel:active {
+cursor: grabbing; /* Changement de curseur lorsqu'il est en train de faire défiler */
+}
+.category-button,
+.horizontal-card {
+flex: 0 0 auto;
+scroll-snap-align: start;
+margin-right: 2vw; /* Espace entre les éléments du carousel */
+}
+
+.horizontal-card {
+max-width: 40vw;
+/* Styles spécifiques pour vos cartes d'annonce */
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+.horizontal-scroll {
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+display: flex;
+flex-wrap: nowrap;
+padding-bottom: 16px; /* Pour éviter que le dernier élément soit coupé */
+}
+
+/* Styles pour chaque élément du carousel */
+.horizontal-scroll .carousel-item {
+flex: 0 0 auto;
+width: 70%; /* Ajustez la largeur de chaque élément selon vos besoins */
+margin-right: 8px; /* Espacement entre les éléments */
+}
+
+/* Ajoutez ces styles dans votre fichier .scss ou .css associé à votre composant */
+
+/* ... Autres styles */
+
+// .announcement-carousel {
+// display: flex;
+// overflow-x: auto;
+// scroll-snap-type: x mandatory;
+// scroll-behavior: smooth;
+// white-space: nowrap;
+// }
+
+// .horizontal-card {
+// flex: 0 0 auto;
+// scroll-snap-align: start;
+// margin-right: 10px; /* Espace entre les éléments du carousel */
+// width: 500px; /* Largeur fixe pour chaque carte, ajustez selon vos besoins */
+// max-width: 80vw; /* Limite la largeur à 80% de la largeur de la vue */
+// box-sizing: border-box;
+// font-size: 14px;
+// height: 350px; /* Inclut la bordure et le padding dans la largeur déclarée */
+// }
+
+/* ... Autres styles */
+/* your-component.scss */
+
+// taille image
+.annonce-image {
+width: 100%; /* Ajustez la largeur souhaitée, par exemple, 100% de la largeur de son conteneur */
+height: auto; /* Laissez la hauteur ajustée automatiquement pour maintenir les proportions originales */
+max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas sa taille d'origine */
+max-height: 200px; /* Ajustez la hauteur maximale souhaitée */
+display: block; /* Pour résoudre le problème de l'espace réservé sous l'image lors du chargement */
+margin: 0 auto; /* Pour centrer l'image dans son conteneur */
+}
+
+/* Ajoutez ces styles à votre fichier CSS ou SCSS */
+
+.announcement-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.horizontal-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 10px; /* Espace entre les éléments du carousel */
+  width: 500px; /* Largeur fixe pour chaque carte, ajustez selon vos besoins */
+  max-width: 80vw; /* Limite la largeur à 80% de la largeur de la vue */
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 350px; /* Inclut la bordure et le padding dans la largeur déclarée */
+}
+
+/* Ajoutez ces styles pour ajuster la taille des images dans le carrousel */
+.horizontal-card img {
+  width: 100%; /* Ajustez la largeur souhaitée, par exemple, 100% de la largeur de son conteneur */
+  height: auto; /* Laissez la hauteur ajustée automatiquement pour maintenir les proportions originales */
+  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas sa taille d'origine */
+  max-height: 100%; /* Ajustez la hauteur maximale souhaitée */
+  display: block; /* Pour résoudre le problème de l'espace réservé sous l'image lors du chargement */
+  margin: 0 auto; /* Pour centrer l'image dans son conteneur */
+}
+
+.full-width-height {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajustez cela en fonction de vos besoins pour conserver les proportions */
+}
